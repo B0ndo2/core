@@ -13,7 +13,6 @@ async def test_ws_run_task(
     hass: HomeAssistant,
     hass_ws_client: WebSocketGenerator,
     init_components: None,
-    mock_chat_log,
 ) -> None:
     """Test running a task via the WebSocket API."""
     entity = hass.states.get(TEST_ENTITY_ID)
